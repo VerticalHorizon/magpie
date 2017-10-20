@@ -1,0 +1,20 @@
+  {
+  "manifest_version": 2,
+
+  "name": "Magpie",
+  "description": "hi i am magpie. do you have something shiny",
+  "version": "1.0",
+
+    "content_scripts": [{
+        "matches": ["https://*/*", "http://*/*"],
+        "js":      ["content.js"]
+    }],
+
+  "browser_action": {
+    "default_title": "Magpie"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab"
+  ]
+}
